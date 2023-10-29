@@ -10,10 +10,11 @@ export IMG=user/${NAME}
 docker build -t ${IMG} .
 
 mkdir -p ${DIR}/volume
+# echo "source /usr/lib/openfoam/openfoam2306/etc/bashrc" >> ./volume/.bashrc
 docker run \
     -it --rm \
     -u $(id -u):$(id -g) \
     -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro \
-    -v ${DIR}/volume:/home \
+    -v ${DIR}/volume:/home/${USER} \
     --name ${NAME} \
     ${IMG}

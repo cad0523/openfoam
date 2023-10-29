@@ -28,6 +28,4 @@ RUN curl -s https://dl.openfoam.com/add-debian-repo.sh | bash \
  && apt autoclean \
  && rm -rf /var/lib/apt/lists/* /root/.[acpw]* https://dl.openfoam.com/add-debian-repo.sh
 
-# RUN echo "source /usr/lib/openfoam/openfoam2306/etc/bashrc" >> /root/.bashrc
-
 WORKDIR "/home"
