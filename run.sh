@@ -10,6 +10,7 @@ export IMG=user/${NAME}
 docker build -t ${IMG} .
 
 mkdir -p ${DIR}/volume
+# docker run -it --rm -v ${DIR}/volume:/home ${IMG}
 # echo "source /usr/lib/openfoam/openfoam2306/etc/bashrc" >> ./volume/.bashrc
 docker run \
     -it --rm \
