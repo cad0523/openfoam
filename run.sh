@@ -2,7 +2,7 @@
 
 # set environment
 export DIR=$(cd $(dirname $0);pwd)
-export NAME=openfoam
+export NAME=openfoam.cfd
 export IMG=user/${NAME}
 
 
