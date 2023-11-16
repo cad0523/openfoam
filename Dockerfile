@@ -26,6 +26,6 @@ RUN curl -s https://dl.openfoam.com/add-debian-repo.sh | bash \
  && apt autoremove -y \
  && apt clean \
  && apt autoclean \
- && rm -rf /var/lib/apt/lists/* /root/.[acpw]* https://dl.openfoam.com/add-debian-repo.sh
+ && rm -rf /var/lib/apt/lists/* /root/.[acpw]*
 
 WORKDIR "/home"
